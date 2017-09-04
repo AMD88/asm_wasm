@@ -1,0 +1,9 @@
+./emcc -O1 -s ASM_JS=1 ~/Documents/projects/login/a.cpp
+node a.out.js
+
+cd ~/packages/emsdk_portable/emscripten/master
+./em++ ~/Documents/projects/login/main.cpp 
+
+./emcc -O1 -s ASM_JS=1 ~/Documents/projects/login/main.cpp -o a.html
+
+
